@@ -14,8 +14,8 @@ public class Principal {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        //CampoBatalla campoBatalla = new CampoBatalla();
-        //campoBatalla();
+        CampoBatalla campoBatalla = new CampoBatalla();
+        campoBatalla.iniciar();
     }
     
 }
