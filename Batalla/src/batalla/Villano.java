@@ -11,19 +11,23 @@ package batalla;
 public abstract class Villano extends Personaje {
     
     // Atributos
+    protected String claseVillano;
     
     // Metodos
+    
+        // Constructor
     
     public Villano(){
         
     }
     
     // Metodos Abstractos
-    
     @Override
-    public abstract void atacar();
-    
-    @Override
-    public abstract void calcularDanoRecibido();
-    
+    public final String getTipo() {
+        return "Villano - " + claseVillano;
+    }
+
+    public String getClaseVillano() {
+        return claseVillano;
+    }
 }

@@ -12,19 +12,21 @@ public abstract class Heroe extends Personaje {
     
     // Atributos
     
-    
+    protected String claseHeroe;
     // Metodos
     
         // Constructor
     public Heroe(){
         
     }
+    
+        // Implementación metodos abstractos
+    @Override
+    public final String getTipo() {
+        return "Heroe - " + claseHeroe;
+    }
 
-    // Metodos Abstractos
-    @Override
-    public abstract void atacar();
-    
-    @Override
-    public abstract void calcularDanoRecibido();
-    
+    public String getClaseHeroe() {
+        return claseHeroe;
+    }
 }
